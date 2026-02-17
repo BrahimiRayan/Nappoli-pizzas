@@ -15,3 +15,7 @@ html {
   --ui-primary: rgb(228, 114, 20);
 }
 
+:not(.dark) body {
+  background-color: #d6d6d6; /* stone-100 */
+}
+

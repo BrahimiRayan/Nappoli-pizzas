@@ -9,14 +9,14 @@
 
     <div class="carousel-container p-5">
       <div class="carousel-track">
-        <div v-for="n in 20" :key="n" class="card">
+        <div v-for="pizza in pizzas" :key="pizza.id" class="card">
           <div class="flex flex-col items-center">
             <img src="~/assets/pics/pizzas.png" alt="Pizza" class="w-40 h-40" />
-            <span class="flex flex-col items-center">
-              <h2>Pizza name {{ n }}</h2>
-              <p>Price: $10.{{ n }}</p>
+            <span class="flex flex-col items-center max-w-40 text-center justify-center text-shadow-sm text-shadow-black">
+              <h2 class="text-orange-600 text-xl">{{ pizza.name }}</h2>
+              <p class="text-red-500">prix <span class="text-lg text-green-500">{{ pizza.price }}</span> <span class="text-white">€</span></p>
 
-              <p>ingrediant: tomates , olive , mozarilla.</p>
+              <p>{{ pizza.ingredients.join(' • ') }}</p>
             </span>
           </div>
         </div>
@@ -31,6 +31,28 @@
 
   <Mshopinfo />
 </template>
+
+<script setup >
+import { loadPizzas } from '~/supabase'
+
+const pizzas = ref([])
+
+onMounted(async () => {
+  try {
+    const data = await loadPizzas() // Attend les données
+    pizzas.value = data.map(p => ({
+      name: p.name,
+      category: p.category,
+      price: p.price,
+      ingredients: p.ingrediant || [], // Assurez-vous que le champ existe
+      image: p.image
+    }))
+  } catch (error) {
+    console.error('Erreur chargement pizzas :', error)
+  }
+})
+</script>
+
 
 <style scoped>
 .carousel-container {

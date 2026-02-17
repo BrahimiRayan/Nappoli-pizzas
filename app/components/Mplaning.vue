@@ -1,8 +1,5 @@
 <template>
-    <div class="relative group">
-        <!-- Effet néon -->
-        
-        
+    <div class="relative group">        
         <div class="relative backdrop-blur-sm rounded-2xl p-6 border border-amber-500/50">
             <!-- Enseigne au néon -->
             <div class="text-center mb-6">

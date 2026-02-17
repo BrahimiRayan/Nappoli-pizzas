@@ -1,5 +1,5 @@
 <template>
-       <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 p-4 h-max">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 p-4 ">
       <div>
         <Mplaning/>
       </div>
@@ -25,7 +25,7 @@
             49 Rue Eugéne Gilbert, Clermont-Ferrand, 63000, Puy de dome, France
           </address>
 
-          <div>
+          <div class="">
             <h3 class="text-orange-500 text-lg">Un peu sur nous :</h3>
             <p class="py-2 px-6">
                 Le chef pizzaiolo <span class="underline text-orange-500">Yoan GARCIN</span> rêvait d'ouvrir sa propre pizzeria depuis très longtemps. Il avait l'habitude de regarder sa grand-mère auvergnate et sa grand-mère provençale cuisiner des plats authentiques. En 2010, son rêve est enfin devenu réalité et il est fier de pouvoir se dire chef pizzaiolo. 
