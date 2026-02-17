@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+*{
+    font-family: "Bangers";
+}
+
+html {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+:root {
+  --ui-primary: rgb(228, 114, 20);
+}
+
