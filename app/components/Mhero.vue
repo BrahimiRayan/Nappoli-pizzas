@@ -1,8 +1,3 @@
-<script setup lang="ts">
-import type { highlight } from '@nuxt/ui/runtime/utils/fuse.js';
-
-</script>
-
 <template>
 <UPageCard
     icon="i-mingcute-pizza-line"
@@ -22,7 +17,7 @@ import type { highlight } from '@nuxt/ui/runtime/utils/fuse.js';
             </h1>
             <p class="my-5">Bienvenue dans notre univers. Un site aussi épuré que nos recettes, une expérience aussi fluide que notre service. Ici, la qualité ne se discute pas, elle se code. Plongez dans une carte pensée pour les puristes et les gourmands, où l'âme de l'Italie se déguste à chaque bouchée.</p>
 
-            <NuxtLink to="/Menu" class="p-3 bg-linear-to-r from-orange-500 to-orange-600 rounded-2xl flex items-center gap-3 w-max">
+            <NuxtLink to="/Order" class="p-3 bg-linear-to-r from-orange-500 to-orange-600 rounded-2xl flex items-center gap-3 w-max">
                 <span>
                     Commander maintenue
                 </span>

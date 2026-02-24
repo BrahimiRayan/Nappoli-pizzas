@@ -39,10 +39,10 @@
             <p class="dark:text-gray-400 text-gray-600  text-sm mb-4">{{ boisson.brand }}</p>
             
             <!-- Bouton commander -->
-            <button class="w-full py-2 bg-amber-600/80 hover:bg-amber-700 text-white rounded-xl font-medium transition-all flex items-center justify-center gap-2">
+            <NuxtLink to="/Order#boissons" class="w-full py-2 bg-amber-600/80 hover:bg-amber-700 text-white rounded-xl font-medium transition-all flex items-center justify-center gap-2">
               <span>Commander</span>
               <span class="text-lg">→</span>
-            </button>
+            </NuxtLink>
           </div>
         </div>
       </div>

@@ -1,19 +1,22 @@
 <template>
-    <UHeader class="border-b z-2000">
+    <UHeader class="border-b rounded-b-md border-amber-600 z-2000">
       <template #title>
-        <h1 class="bg-[url('~/assets/pics/logo.png')] size-15 bg-no-repeat bg-cover text-[0px]">Napoli pizza </h1>
+        <div class="p-2">
+          <h1 class="light:bg-[url('~/assets/pics/logo1.png')] dark:bg-[url('~/assets/pics/logo2.png')] size-13 bg-no-repeat rounded-2xl bg-cover text-[0px] ">Napoli pizza </h1>
+        </div>
       </template>
 
       <UNavigationMenu :items="items" color="primary"/>
 
         <template #right>
             <UColorModeButton />
-            <UButton
-                icon="i-uiw-message"
-                class="bg-orange-600 hover:bg-orange-500 transition-all duration-300 ease-in-out"
+            <NuxtLink
+                to="/Order"
+                class="bg-orange-600 hover:bg-orange-500 text-white transition-all duration-300 ease-in-out py-2 px-2 text-sm rounded-xl flex items-center justify-center gap-x-2"
             >
+                <UIcon name="i-uiw-message" class="size-4.5"/>
                 Commander maintenue
-            </UButton>
+            </NuxtLink>
         </template>
 
      <template #body >

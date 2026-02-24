@@ -2,7 +2,7 @@
   <main class="w-[90%] mx-auto my-10">
     <div class="relative rounded-3xl overflow-hidden mb-12 h-[250px]">
       <div class="absolute inset-0 border border-white/20">
-        <img src="~/assets/pics/p.jpeg" alt="Menu" class="w-full h-full object-cover">
+        <img src="~/assets/pics/bg.jpg" alt="Menu" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-black/50 backdrop-blur-xs"></div>
       </div>
       <div class="relative z-10 h-full flex flex-col items-center justify-center text-center">

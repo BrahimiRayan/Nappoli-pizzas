@@ -64,7 +64,7 @@ onMounted(async () => {
   display: flex;
   gap: 0.75rem;
   width: fit-content;
-  animation: scroll 100s linear infinite;
+  animation: scroll 50s linear infinite;
 }
 
 .card {

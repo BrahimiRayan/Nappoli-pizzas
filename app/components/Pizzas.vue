@@ -16,32 +16,28 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <div v-for="pizza in filteredPizzas" :key="pizza.name" 
            class="group light:bg-black/5 bg-white/5 light:border light:border-orange-300 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:border-amber-500/50 transition-all hover:shadow-2xl hover:shadow-amber-600/20">
-        
-        <!-- Image avec effet de zoom -->
         <div class="relative h-48 overflow-hidden">
           <img :src="pizza.image" :alt="pizza.name" 
                class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
-          <!-- Badge catégorie -->
           <span class="absolute top-3 right-3 bg-amber-600/90 text-white text-xs px-3 py-1 rounded-full backdrop-blur-sm">
             {{ pizza.category }}
           </span>
         </div>
         
-        <!-- Contenu -->
         <div class="p-5">
           <div class="flex justify-between items-start mb-2">
             <h3 class="text-xl font-bold dark:text-white">{{ pizza.name }}</h3>
             <span class="text-2xl font-bold text-amber-500 light:text-shadow-sm text-shadow-black">{{ pizza.price }}€</span>
           </div>
           
-          <!-- Ingrédients -->
+          
           <p class="dark:text-gray-400 text-gray-600 text-sm mb-4">{{ pizza.ingredients.join(' • ') }}</p>
           
-          <!-- Bouton commander (optionnel) -->
-          <button class="w-full py-2 bg-amber-600/80 hover:bg-amber-700 text-white rounded-xl font-medium transition-all flex items-center justify-center gap-2">
-            <span>Commander</span>
-            <span class="text-lg">→</span>
-          </button>
+          
+          <NuxtLink to="/Order" class="w-full py-2 bg-amber-600/80 hover:bg-amber-700 text-white rounded-xl font-medium transition-all flex items-center justify-center gap-2">
+              <span>Commander</span>
+              <span class="text-lg">→</span>
+          </NuxtLink>
         </div>
       </div>
     </div>
